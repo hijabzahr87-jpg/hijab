@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&amp;family=Manrope:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#000000", "surface-container-lowest": "#ffffff", "tertiary-fixed": "#fbddcb", "surface-dim": "#dcdad5", "surface-container-highest": "#e5e2dd", "on-error": "#ffffff", "secondary-container": "#fedeb2", "surface-container-high": "#ebe8e3", "tertiary": "#000000", "error": "#ba1a1a", "on-background": "#1c1c19", "on-secondary-container": "#78603e", "surface": "#fcf9f4", "primary-fixed": "#e5e2e1", "primary-container": "#1c1b1b", "outline-variant": "#c4c7c7", "surface-container": "#f0ede9", "outline": "#747878", "inverse-primary": "#c8c6c5", "secondary": "#725b38", "on-secondary-fixed": "#281800", "on-tertiary-container": "#987f70", "surface-variant": "#e5e2dd", "on-secondary": "#ffffff", "tertiary-fixed-dim": "#dec1b0", "on-secondary-fixed-variant": "#584323", "on-tertiary-fixed": "#28180d", "on-primary-container": "#858383", "error-container": "#ffdad6", "primary-fixed-dim": "#c8c6c5", "on-surface-variant": "#444748", "surface-container-low": "#f6f3ee", "on-tertiary": "#ffffff", "background": "#fcf9f4", "secondary-fixed-dim": "#e0c298", "inverse-surface": "#31302d", "inverse-on-surface": "#f3f0eb", "on-primary-fixed": "#1c1b1b", "on-primary": "#ffffff", "on-primary-fixed-variant": "#474746", "surface-tint": "#5f5e5e", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#574336", "tertiary-container": "#28180d", "on-surface": "#1c1c19", "surface-bright": "#fcf9f4", "secondary-fixed": "#fedeb2" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "gutter": "1rem", "space-lg": "1.5rem", "margin": "1.25rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-sm": ["Playfair Display"], "headline-lg": ["Playfair Display"], "display-lg": ["Playfair Display"], "title-md": ["Manrope"], "label-sm": ["Manrope"], "body-lg": ["Manrope"], "label-md": ["Manrope"], "headline-md": ["Playfair Display"], "body-md": ["Manrope"], "display-lg-mobile": ["Playfair Display"] }, "fontSize": { "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600"}], "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "400"}], "display-lg": ["44px", {"lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "400"}], "title-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600"}], "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600"}], "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "500"}], "body-md": ["14px", {"lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400"}], "display-lg-mobile": ["34px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "400"}] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Return" class="w-11 h-11 -ml-space-xs flex items-center justify-center text-on-surface hover:text-secondary transition-colors" onclick="if(window.history.length > 1) { history.back(); } else { window.location.href='../discovery_maison_parfumerie/'; }"><span class="material-symbols-outlined text-[20px]">arrow_back_ios_new</span></button><img alt="Maison Parfumerie Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAA-JWHE_VaUeJ4MB2ZpXbIv58aZqw8JRRGcsuI7KbXSU_SeRwvNP0YlpjNVfCZtfa5nyHHeBrKFGfXMRDQNdMRJ-fIcxouPI2MI-SGpQEAubdwf5BxNQsSCRchGI6ZTp-oI_tp8f47trrC-WTBAV89kDcWtZsC_S0BTQBb2oBMyM5yjOdmFxO8fn4EGk5Qz0Ez98gb4FQotE5gKHAXNmdUB3R465uSFEPqEyNZMmh7"/><h1 class="font-headline-sm text-headline-sm text-on-surface ml-space-xs truncate max-w-[170px]">Flacon Details</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Saved" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-secondary transition-colors"><span class="material-symbols-outlined text-[22px]">bookmark_border</span></button><button aria-label="Profile" class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_0_1px_rgba(114,91,56,0.3)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2tEdo8dMd5vbcmuJRXCM2KLbSF_HOdOO43YoXAG692YOoGjKsIfkL-KQkCEJTUV-JQiC9H9scYMOOL6Sran0v4hEY9EjErpuxJg7furiI9LCUjHFqyrDTi3lc468bZRwn5dMINstrUNFHY3Ib9lZXBCyDJp9taOCOshc8S8K4Ek4W2LCF5PCWA94daLkeXvX_L3Ot-j4QKO6Uu5CJGthO9COf7D1E6usUKTrySt4"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-28">
+<!-- Visual Showcase Section -->
+<section class="w-full relative px-margin pt-space-md">
+<!-- Main Bottle Visual Stage -->
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-surface-container shadow-sm flex items-center justify-center">
+<img class="w-full h-full object-cover transition-opacity duration-300" data-alt="High-end editorial studio still life of a luxury perfume flacon named Nuit de Santal. Heavy smoked amber glass rectangular bottle with faceted beveled shoulders, an engraved brushed gold cap with a delicate black silk braided cord knotted at its neck. Warm dramatic chiaroscuro side lighting casting soft honeyed reflections on a polished cream limestone surface, ultra-luxurious minimalist aesthetic." id="main-flacon-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8J0vVQVsAjeg5xFfChIC-4SJnMCHjiJnT6LqZB4ncheMx1P6qZtq-RqC07QaM2rQX_10zpFiCMcZBd7s2VoQFscJ29EzE7LLuVbTLePk7EVi97_D1p9PzyMk0bExQIG-IIbX90eZd8dIoWJ3ZoKfa7aEQvAGbLDFT1EtJ8swyeGRpaBpyHEmLY-VrRPsVx_rfxgUBzJTTdSNIJ__iqmsoGC74-qaAqdDGmvq1Qcg"/>
+<!-- Subtle Ambient Tag -->
+<div class="absolute top-space-md left-space-md bg-surface/90 backdrop-blur-md px-space-sm py-1 rounded shadow-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface">Maison Signature</span>
+</div>
+<!-- Concentration Watermark -->
+<div class="absolute bottom-space-md right-space-md bg-surface-container-lowest/80 backdrop-blur-sm px-2.5 py-1 rounded">
+<span class="font-label-sm text-label-sm tracking-wider text-secondary">30% CONCENTRATION</span>
+</div>
+</div>
+<!-- Thumbnail Gallery Strip -->
+<div class="flex items-center gap-space-sm mt-space-md overflow-x-auto pb-1 no-scrollbar">
+<button class="relative flex-shrink-0 w-16 h-20 rounded overflow-hidden bg-surface-container-high transition-all shadow-sm" id="thumb-0" onclick="switchVisual(0)">
+<img class="w-full h-full object-cover" data-alt="Close up detail of a luxury smoked amber perfume bottle with engraved gold cap and dark silk cord against warm cream stone background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2yEQuxQWdXYU5lnIu8kLieT---i6S-E65PSdiFaXS7nBCxYl7EhSntQoQ--nF36SlQEE0zMS7GfgrBMkvURK4WBPXIjSExsTS22bQyRu4eekUhtQwuVFGWS59wbFlcrt0uNTFsxcHbmDqnnrE_LCOJMmDbH3X_ewfKe9UXLjIPyc5-Wy6wZYXY5k7vumPCWrtMhK2__fyGkYgH606a-3KGAs4hcO3u9E868Y6334"/>
+<div class="thumb-indicator absolute inset-0 bg-primary/20 pointer-events-none"></div>
+</button>
+<button class="relative flex-shrink-0 w-16 h-20 rounded overflow-hidden bg-surface-container-high transition-all opacity-60" id="thumb-1" onclick="switchVisual(1)">
+<img class="w-full h-full object-cover" data-alt="Editorial packaging shot of an exquisite textured ecru linen presentation box for Nuit de Santal perfume with gold foil calligraphy and silk pull ribbon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkTtML8WiyHfKLH8AnQPKltczt7jlSj9BmjDURb0ixDsSFTMWrC_gvTNrgWex4BuYqIijvV_357rrUxgp38WLobEbHNT-YhuMbR8knWJXUV7FkNs2N-_ZCDnFt8IWO5UeX4DHj3Hu0IGCW3fxntoR3KAfzZVofEHE2GJLREHlTFxdmHFF79GpbjWwxHInECv4QeR0GrADC35oL--vVbTD20XfEFmNCRBxXAWWClXk"/>
+<div class="thumb-indicator absolute inset-0 bg-primary/0 pointer-events-none"></div>
+</button>
+<button class="relative flex-shrink-0 w-16 h-20 rounded overflow-hidden bg-surface-container-high transition-all opacity-60" id="thumb-2" onclick="switchVisual(2)">
+<img class="w-full h-full object-cover" data-alt="Macro botanical composition of dried Mysore sandalwood chips, raw iris pallida root, cracked cardamom pods and amber resin on handmade rag paper." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJxqNkJnepLTm95eM_mics_u9D2Kq7GCML09vmgNjxfxT78Hv9Vk80hSXLapLFgBs0FcFQu-5Z0S_JgRv0eqkMA-s4PXEU6Bb7wSGPNpG9HV4R-Gnne0622s3Rb9nbT1Lg-ppACiLG7HmmRBWfN8hHkfWDiBKURsi2fu-5JfPxFCZmGlKLi4LJ1NwgokQsw7Jnxw_J0wXgIKRiz8FNOzy5mEjYiZ6hvmHFDbg6tv4"/>
+<div class="thumb-indicator absolute inset-0 bg-primary/0 pointer-events-none"></div>
+</button>
+<div class="flex-shrink-0 flex flex-col justify-center items-center w-20 h-20 rounded bg-surface-container-low px-2 text-center">
+<span class="material-symbols-outlined text-[18px] text-secondary">palette</span>
+<span class="font-label-sm text-[9px] text-on-surface-variant mt-1 leading-tight uppercase">Bespoke Flacon</span>
+</div>
+</div>
+</section>
+<!-- Product Nomenclature & Essence -->
+<section class="px-margin mt-space-lg">
+<div class="flex items-baseline justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary">Smoky Woody Amber</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Rare Extract</span>
+</div>
+<div class="mt-space-xs flex items-baseline justify-between">
+<h2 class="font-display-lg-mobile text-display-lg-mobile text-on-surface">Nuit de Santal</h2>
+<div class="font-headline-md text-headline-md text-on-surface" id="display-price">€265</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+      An intoxicating homage to nocturnal Mysore stillness. Velvety, smoky sandalwood smolders amidst cracked green cardamom, mystical incense resin, and powdery Florentine iris.
+    </p>
+<!-- Key Metrics: Longevity & Sillage -->
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container-low space-y-space-md">
+<!-- Longevity -->
+<div>
+<div class="flex justify-between items-center mb-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">schedule</span> Longevity
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">12+ Hours (Exceptional)</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="w-[92%] h-full bg-secondary rounded-full"></div>
+</div>
+</div>
+<!-- Sillage -->
+<div>
+<div class="flex justify-between items-center mb-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">flare</span> Projection &amp; Sillage
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Rich &amp; Enchanting</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="w-[84%] h-full bg-secondary rounded-full"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Size Selection -->
+<section class="px-margin mt-space-lg">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface">Select Vessel Edition</span>
+<span class="font-label-sm text-label-sm text-secondary">Complimentary Atomizer Included</span>
+</div>
+<div class="grid grid-cols-3 gap-2.5">
+<!-- Option 1: 50ml (Selected) -->
+<button class="size-btn flex flex-col items-center justify-center p-3 rounded-lg bg-primary text-on-primary shadow-sm transition-all text-center" onclick="selectSize('50ml', 265, this)">
+<span class="font-label-md text-label-md tracking-wider">50 ML</span>
+<span class="font-label-sm text-[11px] opacity-80 mt-0.5">€265</span>
+<span class="font-label-sm text-[9px] uppercase tracking-wider text-secondary-container mt-1">Flacon</span>
+</button>
+<!-- Option 2: 100ml -->
+<button class="size-btn flex flex-col items-center justify-center p-3 rounded-lg bg-surface-container-high text-on-surface shadow-sm transition-all text-center" onclick="selectSize('100ml', 380, this)">
+<span class="font-label-md text-label-md tracking-wider">100 ML</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant mt-0.5">€380</span>
+<span class="font-label-sm text-[9px] uppercase tracking-wider text-secondary mt-1">Grand Edition</span>
+</button>
+<!-- Option 3: 10ml -->
+<button class="size-btn flex flex-col items-center justify-center p-3 rounded-lg bg-surface-container-high text-on-surface shadow-sm transition-all text-center" onclick="selectSize('10ml', 75, this)">
+<span class="font-label-md text-label-md tracking-wider">10 ML</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant mt-0.5">€75</span>
+<span class="font-label-sm text-[9px] uppercase tracking-wider text-secondary mt-1">Brass Case</span>
+</button>
+</div>
+</section>
+<!-- Bespoke Engraving Drawer/Toggle -->
+<section class="px-margin mt-space-lg">
+<div class="bg-surface-container rounded-xl p-space-md transition-all">
+<div class="flex items-center justify-between cursor-pointer" onclick="toggleEngraving()">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[19px]">edit_note</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Gold Flacon Engraving</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Up to 3 initials on heavy cap (+€25)</span>
+</div>
+</div>
+<div class="w-6 h-6 rounded flex items-center justify-center bg-surface-container-highest transition-colors" id="engraving-toggle-box">
+<span class="material-symbols-outlined text-primary text-[18px] hidden" id="engraving-check">check</span>
+</div>
+</div>
+<div class="hidden mt-space-md pt-space-sm" id="engraving-panel">
+<label class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant block mb-1" for="monogram-input">Monogram Initials</label>
+<div class="flex gap-2">
+<input class="bg-surface-container-lowest text-on-surface font-headline-sm px-3 py-2 rounded uppercase tracking-widest w-28 text-center outline-none focus:bg-surface-bright shadow-inner" id="monogram-input" maxlength="3" oninput="updateMonogram(this.value)" placeholder="M.P." type="text"/>
+<div class="flex-1 flex items-center px-3 bg-surface-container-lowest/60 rounded text-on-surface-variant font-label-sm text-[11px]">
+            Engraved by master artisans in Paris atelier within 24h.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Olfactory Pyramid -->
+<section class="px-margin mt-space-xl">
+<div class="flex items-center justify-between mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Olfactory Architecture</h3>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Harmonic Evolution</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+      Nuit de Santal unfolds across hours, shifting from lively spice to sacred deep wood resonance.
+    </p>
+<!-- Pyramid Tiers -->
+<div class="space-y-space-sm">
+<!-- Top Notes Tier -->
+<div class="p-space-md rounded-xl bg-surface-container-low transition-all">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">Head Notes</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Opening (0 - 30 min)</span>
+</div>
+<div class="flex flex-wrap gap-1.5 mt-2">
+<span class="bg-surface-container-highest px-2.5 py-1 rounded text-on-surface font-label-sm text-[11px] tracking-wide">Green Cardamom</span>
+<span class="bg-surface-container-highest px-2.5 py-1 rounded text-on-surface font-label-sm text-[11px] tracking-wide">Calabrian Bergamot Zest</span>
+<span class="bg-surface-container-highest px-2.5 py-1 rounded text-on-surface font-label-sm text-[11px] tracking-wide">Pink Pepper</span>
+</div>
+</div>
+<!-- Heart Notes Tier -->
+<div class="p-space-md rounded-xl bg-surface-container transition-all shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">Heart Notes</span>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Core (30 min - 4 hrs)</span>
+</div>
+<div class="flex flex-wrap gap-1.5 mt-2">
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded text-on-surface font-label-sm text-[11px] tracking-wide shadow-sm">Iris Concrete (Florentine)</span>
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded text-on-surface font-label-sm text-[11px] tracking-wide shadow-sm">Papyrus Wood</span>
+<span class="bg-surface-container-lowest px-2.5 py-1 rounded text-on-surface font-label-sm text-[11px] tracking-wide shadow-sm">Omani Incense Resin</span>
+</div>
+</div>
+<!-- Base Notes Tier -->
+<div class="p-space-md rounded-xl bg-primary-container text-on-primary transition-all">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary-container">Base Soul</span>
+</div>
+<span class="font-label-sm text-[11px] text-primary-fixed-dim">Drydown (4 - 14+ hrs)</span>
+</div>
+<div class="flex flex-wrap gap-1.5 mt-2">
+<span class="bg-surface-container-highest/20 text-surface-container-lowest px-2.5 py-1 rounded font-label-sm text-[11px] tracking-wide">Mysore Sandalwood 30-Year</span>
+<span class="bg-surface-container-highest/20 text-surface-container-lowest px-2.5 py-1 rounded font-label-sm text-[11px] tracking-wide">Warm Amber</span>
+<span class="bg-surface-container-highest/20 text-surface-container-lowest px-2.5 py-1 rounded font-label-sm text-[11px] tracking-wide">Cashmere Wood</span>
+<span class="bg-surface-container-highest/20 text-surface-container-lowest px-2.5 py-1 rounded font-label-sm text-[11px] tracking-wide">Smoked Haitian Vetiver</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Narrative Block -->
+<section class="mt-space-xl px-margin">
+<div class="bg-surface-container-high rounded-xl p-space-lg relative overflow-hidden">
+<div class="relative z-10">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-1">The Nose Behind The Scent</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Antoine Laurent • Grasse</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 italic">
+          "I wanted to capture the silence of dusk in sacred sandalwood groves. It is neither dry nor sweet; it is skin-warm, nocturnal, and unapologetically lingering."
+        </p>
+</div>
+</div>
+</section>
+<!-- Accordions: Formula & Packaging -->
+<section class="px-margin mt-space-lg space-y-space-sm">
+<!-- Accordion 1 -->
+<div class="rounded-lg bg-surface-container-low overflow-hidden">
+<button class="w-full p-space-md flex items-center justify-between text-left" onclick="toggleAccordion('formula-acc', 'formula-icon')">
+<span class="font-title-md text-title-md text-on-surface">The Formula &amp; Sustainable Sourcing</span>
+<span class="material-symbols-outlined text-on-surface transition-transform duration-200" id="formula-icon">expand_more</span>
+</button>
+<div class="hidden px-space-md pb-space-md font-body-md text-body-md text-on-surface-variant space-y-2" id="formula-acc">
+<p>100% sustainably harvested Mysore santalum album through verified agro-forestry conservation preserves in Karnataka. Extracted using supercritical CO2 method to preserve sacred heartwood lipids without synthetic stabilizers.</p>
+<p class="font-label-sm text-label-sm uppercase tracking-wide text-secondary">Cruelty-free • Hand-blended in small numbered batches • No phthalates</p>
+</div>
+</div>
+<!-- Accordion 2 -->
+<div class="rounded-lg bg-surface-container-low overflow-hidden">
+<button class="w-full p-space-md flex items-center justify-between text-left" onclick="toggleAccordion('packaging-acc', 'packaging-icon')">
+<span class="font-title-md text-title-md text-on-surface">Shipping &amp; Atelier Presentation</span>
+<span class="material-symbols-outlined text-on-surface transition-transform duration-200" id="packaging-icon">expand_more</span>
+</button>
+<div class="hidden px-space-md pb-space-md font-body-md text-body-md text-on-surface-variant space-y-2" id="packaging-acc">
+<p>Presented in our handcrafted ecru linen rigid box with wax seal. Shipped in thermal protective insulated cartons via carbon-neutral express courier. Express worldwide delivery within 2-4 business days.</p>
+</div>
+</div>
+</section>
+<!-- Sticky Bottom Purchase Anchor Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/95 backdrop-blur-xl pb-safe shadow-[0_-8px_30px_rgba(0,0,0,0.06)]">
+<!-- Complimentary Sample Mini Banner -->
+<div class="bg-secondary-container/70 py-1.5 px-margin flex items-center justify-center gap-1.5 text-on-secondary-container">
+<span class="material-symbols-outlined text-[15px]">redeem</span>
+<span class="font-label-sm text-label-sm tracking-wide">Includes 2 bespoke 2ml samples of your choice</span>
+</div>
+<div class="p-margin flex items-center gap-space-md">
+<!-- Wishlist / Share Button -->
+<button aria-label="Favorite" class="w-13 h-12 px-3 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-[22px]">favorite_border</span>
+</button>
+<!-- Add to Bag Primary CTA -->
+<button class="flex-1 h-12 bg-primary text-on-primary rounded-lg flex items-center justify-between px-space-lg active:scale-[0.99] transition-transform" id="add-to-bag-cta" onclick="handleAddToBag()">
+<span class="font-label-md text-label-md tracking-wider uppercase">Add To Bag</span>
+<span class="font-headline-sm text-[16px] text-surface-container-lowest font-medium" id="sticky-total-price">€265</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  let basePrice = 265;
+  let hasEngraving = false;
+  let currentVolume = '50ml';
+
+  const visualImages = [
+    {
+      alt: "High-end editorial studio still life of a luxury perfume flacon named Nuit de Santal. Heavy smoked amber glass rectangular bottle with faceted beveled shoulders, an engraved brushed gold cap with a delicate black silk braided cord knotted at its neck. Warm dramatic chiaroscuro side lighting casting soft honeyed reflections on a polished cream limestone surface, ultra-luxurious minimalist aesthetic."
+    },
+    {
+      alt: "Editorial packaging shot of an exquisite textured ecru linen presentation box for Nuit de Santal perfume with gold foil calligraphy and silk pull ribbon, resting open on warm beige travertine stone with delicate packaging tissues."
+    },
+    {
+      alt: "Macro botanical composition of dried Mysore sandalwood chips, raw iris pallida root, cracked cardamom pods and natural amber resin droplets on handmade rough paper under warm natural morning light."
+    }
+  ];
+
+  function switchVisual(index) {
+    const mainImg = document.getElementById('main-flacon-img');
+    mainImg.style.opacity = '0';
+    setTimeout(() => {
+      mainImg.setAttribute('data-alt', visualImages[index].alt);
+      mainImg.style.opacity = '1';
+    }, 150);
+
+    for (let i = 0; i < 3; i++) {
+      const thumb = document.getElementById(`thumb-${i}`);
+      const indicator = thumb.querySelector('.thumb-indicator');
+      if (i === index) {
+        thumb.classList.remove('opacity-60');
+        indicator.classList.remove('bg-primary/0');
+        indicator.classList.add('bg-primary/20');
+      } else {
+        thumb.classList.add('opacity-60');
+        indicator.classList.remove('bg-primary/20');
+        indicator.classList.add('bg-primary/0');
+      }
+    }
+  }
+
+  function selectSize(size, price, element) {
+    basePrice = price;
+    currentVolume = size;
+
+    document.querySelectorAll('.size-btn').forEach(btn => {
+      btn.className = 'size-btn flex flex-col items-center justify-center p-3 rounded-lg bg-surface-container-high text-on-surface shadow-sm transition-all text-center';
+      const labelBadge = btn.querySelector('span:nth-child(3)');
+      if (labelBadge) {
+        labelBadge.className = 'font-label-sm text-[9px] uppercase tracking-wider text-secondary mt-1';
+      }
+    });
+
+    element.className = 'size-btn flex flex-col items-center justify-center p-3 rounded-lg bg-primary text-on-primary shadow-sm transition-all text-center';
+    const activeBadge = element.querySelector('span:nth-child(3)');
+    if (activeBadge) {
+      activeBadge.className = 'font-label-sm text-[9px] uppercase tracking-wider text-secondary-container mt-1';
+    }
+
+    renderTotal();
+  }
+
+  function toggleEngraving() {
+    hasEngraving = !hasEngraving;
+    const box = document.getElementById('engraving-toggle-box');
+    const check = document.getElementById('engraving-check');
+    const panel = document.getElementById('engraving-panel');
+
+    if (hasEngraving) {
+      box.className = 'w-6 h-6 rounded flex items-center justify-center bg-secondary-container transition-colors';
+      check.classList.remove('hidden');
+      panel.classList.remove('hidden');
+      document.getElementById('monogram-input').focus();
+    } else {
+      box.className = 'w-6 h-6 rounded flex items-center justify-center bg-surface-container-highest transition-colors';
+      check.classList.add('hidden');
+      panel.classList.add('hidden');
+    }
+    renderTotal();
+  }
+
+  function updateMonogram(val) {
+    // Monogram input reactive hook
+  }
+
+  function renderTotal() {
+    const total = basePrice + (hasEngraving ? 25 : 0);
+    document.getElementById('display-price').innerText = `€${total}`;
+    document.getElementById('sticky-total-price').innerText = `€${total}`;
+  }
+
+  function toggleAccordion(contentId, iconId) {
+    const content = document.getElementById(contentId);
+    const icon = document.getElementById(iconId);
+    if (content.classList.contains('hidden')) {
+      content.classList.remove('hidden');
+      icon.style.transform = 'rotate(180deg)';
+    } else {
+      content.classList.add('hidden');
+      icon.style.transform = 'rotate(0deg)';
+    }
+  }
+
+  function handleAddToBag() {
+    const cta = document.getElementById('add-to-bag-cta');
+    const originalContent = cta.innerHTML;
+    cta.innerHTML = '<span class="font-label-md text-label-md tracking-wider uppercase text-center w-full flex items-center justify-center gap-1.5"><span class="material-symbols-outlined text-[18px]">check_circle</span> Added to Atelier Bag</span>';
+    setTimeout(() => {
+      window.location.href = '../shopping_bag_atelier_selection/';
+    }, 1000);
+  }
+</script></main></body></html>

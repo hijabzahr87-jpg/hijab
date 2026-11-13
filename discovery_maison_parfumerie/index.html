@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&amp;family=Manrope:wght@300..700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#000000", "surface-container-lowest": "#ffffff", "tertiary-fixed": "#fbddcb", "surface-dim": "#dcdad5", "surface-container-highest": "#e5e2dd", "on-error": "#ffffff", "secondary-container": "#fedeb2", "surface-container-high": "#ebe8e3", "tertiary": "#000000", "error": "#ba1a1a", "on-background": "#1c1c19", "on-secondary-container": "#78603e", "surface": "#fcf9f4", "primary-fixed": "#e5e2e1", "primary-container": "#1c1b1b", "outline-variant": "#c4c7c7", "surface-container": "#f0ede9", "outline": "#747878", "inverse-primary": "#c8c6c5", "secondary": "#725b38", "on-secondary-fixed": "#281800", "on-tertiary-container": "#987f70", "surface-variant": "#e5e2dd", "on-secondary": "#ffffff", "tertiary-fixed-dim": "#dec1b0", "on-secondary-fixed-variant": "#584323", "on-tertiary-fixed": "#28180d", "on-primary-container": "#858383", "error-container": "#ffdad6", "primary-fixed-dim": "#c8c6c5", "on-surface-variant": "#444748", "surface-container-low": "#f6f3ee", "on-tertiary": "#ffffff", "background": "#fcf9f4", "secondary-fixed-dim": "#e0c298", "inverse-surface": "#31302d", "inverse-on-surface": "#f3f0eb", "on-primary-fixed": "#1c1b1b", "on-primary": "#ffffff", "on-primary-fixed-variant": "#474746", "surface-tint": "#5f5e5e", "on-error-container": "#93000a", "on-tertiary-fixed-variant": "#574336", "tertiary-container": "#28180d", "on-surface": "#1c1c19", "surface-bright": "#fcf9f4", "secondary-fixed": "#fedeb2" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "gutter": "1rem", "space-lg": "1.5rem", "margin": "1.25rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem" }, "fontFamily": { "headline-sm": ["Playfair Display"], "headline-lg": ["Playfair Display"], "display-lg": ["Playfair Display"], "title-md": ["Manrope"], "label-sm": ["Manrope"], "body-lg": ["Manrope"], "label-md": ["Manrope"], "headline-md": ["Playfair Display"], "body-md": ["Manrope"], "display-lg-mobile": ["Playfair Display"] }, "fontSize": { "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600"}], "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "400"}], "display-lg": ["44px", {"lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "400"}], "title-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "600"}], "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600"}], "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "500"}], "body-md": ["14px", {"lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "400"}], "display-lg-mobile": ["34px", {"lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "400"}] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Maison Parfumerie Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAA-JWHE_VaUeJ4MB2ZpXbIv58aZqw8JRRGcsuI7KbXSU_SeRwvNP0YlpjNVfCZtfa5nyHHeBrKFGfXMRDQNdMRJ-fIcxouPI2MI-SGpQEAubdwf5BxNQsSCRchGI6ZTp-oI_tp8f47trrC-WTBAV89kDcWtZsC_S0BTQBb2oBMyM5yjOdmFxO8fn4EGk5Qz0Ez98gb4FQotE5gKHAXNmdUB3R465uSFEPqEyNZMmh7"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface hidden xs:inline-block">Maison</span><span class="font-label-md text-label-md uppercase text-secondary font-semibold ml-space-xs tracking-wider">Discovery</span></div><div class="flex items-center gap-space-xs"><button aria-label="Search Catalogue" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-secondary transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Customer Profile" class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_0_1px_rgba(114,91,56,0.3)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2tEdo8dMd5vbcmuJRXCM2KLbSF_HOdOO43YoXAG692YOoGjKsIfkL-KQkCEJTUV-JQiC9H9scYMOOL6Sran0v4hEY9EjErpuxJg7furiI9LCUjHFqyrDTi3lc468bZRwn5dMINstrUNFHY3Ib9lZXBCyDJp9taOCOshc8S8K4Ek4W2LCF5PCWA94daLkeXvX_L3Ot-j4QKO6Uu5CJGthO9COf7D1E6usUKTrySt4"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Editorial Campaign Showcase: L'Heure Dorée -->
+<section class="relative w-full overflow-hidden px-margin mb-space-xl">
+<div class="relative w-full rounded-xl overflow-hidden bg-primary text-on-primary shadow-xl">
+<div class="relative w-full h-[430px]">
+<img class="w-full h-full object-cover opacity-85" data-alt="Editorial artistic perfume bottle photograph of L'Heure Dorée luxury flacon with heavy crystalline faceted cap, filled with radiant warm amber perfume extract. Soft beam of Parisian golden sunset lighting through a linen salon curtain, surrounded by dried vanilla pods and faint bergamot peel on textured stone. Cinematic shallow depth of field, warm honey tones, understated luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPyCGAPgCQlTyirFetgdcHqVZj8MLSy3A_q3nprrIZIwt0uOGTY15pbhGHcU2OF1k1-1R9betnEqh-xd2xq-JJzOudeogip2iW7M2eeVuts9hvehQMezeypf5OFkWcN7H1Rk-k0HCcwpFdGcWuzt-AogPJxTE1-G4wzvuJohyOTgu4nJOVaS_Yj63qXxDYpTW_6g1fLInhZ07Ql6rpPbZZcrmvVjQef-QICHyabAo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>
+<div class="absolute top-space-md left-space-md flex items-center gap-space-xs bg-surface/20 backdrop-blur-md px-3 py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-surface-container-lowest">Collection Privée · Édition Limitée</span>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-space-lg flex flex-col items-start">
+<span class="font-label-md text-label-md tracking-widest uppercase text-secondary-fixed mb-space-xs">Nouveau Chef-d'œuvre</span>
+<h1 class="font-headline-lg text-headline-lg font-light tracking-tight text-surface-container-lowest mb-space-xs">L'Heure Dorée</h1>
+<p class="font-headline-sm text-headline-sm italic text-secondary-fixed font-normal mb-space-sm">Extrait de Parfum</p>
+<p class="font-body-md text-body-md text-surface-container-high line-clamp-2 max-w-[90%] mb-space-lg font-light leading-relaxed">
+            An ethereal alchemy of smoky vanilla, golden amber, and bergamot harvested at twilight in Calabria.
+          </p>
+<div class="w-full flex items-center justify-between gap-space-sm pt-space-xs">
+<button onclick="window.location.href='../flacon_details_nuit_de_santal/'" class="flex-1 bg-surface-container-lowest text-primary py-3.5 px-space-md rounded-lg font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-space-xs shadow-md active:scale-[0.98] transition-transform cursor-pointer">
+<span>Explore Scent</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<button aria-label="Save to Vault" class="w-12 h-12 bg-surface/20 backdrop-blur-md text-surface-container-lowest rounded-lg flex items-center justify-center active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[20px]">bookmark_border</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Olfactory Notes Selector (Delightful Sensory Matrix) -->
+<section class="w-full mb-space-xl">
+<div class="px-margin flex items-baseline justify-between mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-widest block mb-0.5">Harmonies &amp; Accords</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Olfactory Families</h2>
+</div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">6 Families</span>
+</div>
+<div class="w-full overflow-x-auto px-margin flex gap-space-sm no-scrollbar pb-2" id="family-pills">
+<button class="olfactory-chip active flex-shrink-0 flex items-center gap-space-xs px-4 py-2.5 rounded-full bg-primary text-on-primary transition-all duration-300 shadow-sm" data-family="woody">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="font-label-md text-label-md tracking-wider">Woody</span>
+<span class="font-label-sm text-label-sm opacity-60">· Santal</span>
+</button>
+<button class="olfactory-chip flex-shrink-0 flex items-center gap-space-xs px-4 py-2.5 rounded-full bg-surface-container-high text-on-surface transition-all duration-300 hover:bg-surface-container-highest" data-family="amber">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md tracking-wider">Amber &amp; Resin</span>
+<span class="font-label-sm text-label-sm opacity-60">· Myrrh</span>
+</button>
+<button class="olfactory-chip flex-shrink-0 flex items-center gap-space-xs px-4 py-2.5 rounded-full bg-surface-container-high text-on-surface transition-all duration-300 hover:bg-surface-container-highest" data-family="floral">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-md text-label-md tracking-wider">Floral</span>
+<span class="font-label-sm text-label-sm opacity-60">· Grasse Rose</span>
+</button>
+<button class="olfactory-chip flex-shrink-0 flex items-center gap-space-xs px-4 py-2.5 rounded-full bg-surface-container-high text-on-surface transition-all duration-300 hover:bg-surface-container-highest" data-family="fresh">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-md text-label-md tracking-wider">Fresh Citrus</span>
+<span class="font-label-sm text-label-sm opacity-60">· Petitgrain</span>
+</button>
+<button class="olfactory-chip flex-shrink-0 flex items-center gap-space-xs px-4 py-2.5 rounded-full bg-surface-container-high text-on-surface transition-all duration-300 hover:bg-surface-container-highest" data-family="gourmand">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span>
+<span class="font-label-md text-label-md tracking-wider">Gourmand</span>
+<span class="font-label-sm text-label-sm opacity-60">· Tonka</span>
+</button>
+<button class="olfactory-chip flex-shrink-0 flex items-center gap-space-xs px-4 py-2.5 rounded-full bg-surface-container-high text-on-surface transition-all duration-300 hover:bg-surface-container-highest" data-family="leather">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span class="font-label-md text-label-md tracking-wider">Leather</span>
+<span class="font-label-sm text-label-sm opacity-60">· Birch</span>
+</button>
+</div>
+</section>
+<!-- Curated Seasonal Flacons (Horizontal Showcase Reel) -->
+<section class="w-full mb-space-xl">
+<div class="px-margin flex items-end justify-between mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-secondary tracking-widest block mb-0.5">Seasonal Edits</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Private Cellar</h2>
+</div>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-0.5" href="#">
+        View All <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Scrollable Flacon Reel -->
+<div class="w-full overflow-x-auto px-margin flex gap-space-md no-scrollbar snap-x snap-mandatory">
+<!-- Card 1: Nuit de Santal -->
+<article class="flex-shrink-0 w-[270px] snap-start bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm relative group cursor-pointer" onclick="window.location.href='../flacon_details_nuit_de_santal/'">
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container-low mb-space-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Monochromatic studio still life of Nuit de Santal flacon, dark smoked glass perfume bottle with gold foiled typography, set against natural sand and textured volcanic stone. Gentle sun dappling, editorial minimalist Paris fragrance house presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNOvfP4dIx102NaFJsD4hivIK4I9ktphIy2feeH-f5VaRR62yX72c4yQ6TQtrKix6aioygff35EyzeNIInO_b8OvkiwNGKt_AXb3sb5I3cO7zeGrdcYLf9U0xVo8I3AH0OppOYwczxxafdVcg-zC7e6k4ePoSFSmUtPLmk-VXuVaHPByoW8aPalCqieglJatlBd5WgXCmQ0RzLTcB1OpnLnbo_WKZ0aJh9NV8ofe8"/>
+<span class="absolute top-2.5 left-2.5 bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm uppercase px-2 py-0.5 rounded tracking-widest shadow-xs">
+            Extrait
+          </span>
+<button aria-label="Favorite Nuit de Santal" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:text-secondary">
+<span class="material-symbols-outlined text-[18px]">favorite_border</span>
+</button>
+</div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Atelier N° 04</span>
+<div class="flex items-center gap-0.5 text-secondary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">4.9</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-0.5">Nuit de Santal</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1 mb-space-sm text-xs">Australian Sandalwood, Cardamom, Papyrus</p>
+<div class="flex items-center justify-between pt-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-outline block uppercase">50ml / 100ml</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">€240</span>
+</div>
+<button aria-label="Add Nuit de Santal to Cart" class="quick-add-btn bg-primary text-on-primary hover:bg-secondary transition-colors w-10 h-10 rounded-lg flex items-center justify-center shadow-xs active:scale-95">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2: Rose Impériale -->
+<article class="flex-shrink-0 w-[270px] snap-start bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm relative group cursor-pointer" onclick="window.location.href='../flacon_details_nuit_de_santal/'">
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container-low mb-space-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Editorial bottle portrait of Rose Impériale perfume, pale blush tinted translucent heavy glass bottle with a brutalist brass cap, resting on fine French silk fabric. Delicate morning mist atmosphere, warm dawn lighting, fine art perfume aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3nj2BDQuxbtcVco6ivhiWiD02AkV7rkm37my-oeCS8SWBORhAD-s11xPEaev9wfWkM-lxuuhICimxk0L7I3ohG7lw17KVxJNGEs59TqCW5wsrcsfeMzehyC7M8BTj5vTsbwYBWcw2CIJ0smOd9w1p9FfGBxxmaXUQ303tOpsDz7mZfvNmup-OPoN5XoP3CuZiU43XUOIg_6d0g5GWtR580pipxj1gmbtYwmYlPFw"/>
+<span class="absolute top-2.5 left-2.5 bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm uppercase px-2 py-0.5 rounded tracking-widest shadow-xs">
+            Absolu
+          </span>
+<button aria-label="Favorite Rose Impériale" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:text-secondary">
+<span class="material-symbols-outlined text-[18px]">favorite_border</span>
+</button>
+</div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Atelier N° 09</span>
+<div class="flex items-center gap-0.5 text-secondary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">5.0</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-0.5">Rose Impériale</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1 mb-space-sm text-xs">Centifolia Rose, Lychee, Incense Tears</p>
+<div class="flex items-center justify-between pt-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-outline block uppercase">50ml / 100ml</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">€265</span>
+</div>
+<button aria-label="Add Rose Impériale to Cart" class="quick-add-btn bg-primary text-on-primary hover:bg-secondary transition-colors w-10 h-10 rounded-lg flex items-center justify-center shadow-xs active:scale-95">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3: Cèdre Sacré -->
+<article class="flex-shrink-0 w-[270px] snap-start bg-surface-container-lowest rounded-xl p-space-md flex flex-col justify-between shadow-sm relative group cursor-pointer" onclick="window.location.href='../flacon_details_nuit_de_santal/'">
+<div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-surface-container-low mb-space-sm">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Artistic perfume flacon of Cèdre Sacré in an architectural amber glass flacon, positioned on an aged raw cedarwood plank. Rich warm dark tones, golden highlights on the liquid inside, subtle curling incense smoke in the background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDEkG1w0Fv6jVnv2vGFX2icT68uThfj5_FjiN-N3WEqBYzvhg8ZC8eq0Jd-6GgwQK6Gz521v3ZWbJbsCiwKiWWVJmZKbKgbpO1dPC3vDQ53woY1siND6JVoulrXqcdWajMQ_BMX1c9oZJSwxDxrmmKDTC5_c1ZxqYpJzR4ly8w2J26602BeejkNj3DtKEPOFFjYa9YbXJpK5ErmUr3R7j503y6IkKXfqYq0u0lZZY"/>
+<span class="absolute top-2.5 left-2.5 bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface font-label-sm text-label-sm uppercase px-2 py-0.5 rounded tracking-widest shadow-xs">
+            Extrait
+          </span>
+<button aria-label="Favorite Cèdre Sacré" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm flex items-center justify-center text-on-surface hover:text-secondary">
+<span class="material-symbols-outlined text-[18px]">favorite_border</span>
+</button>
+</div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Atelier N° 12</span>
+<div class="flex items-center gap-0.5 text-secondary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">4.8</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-0.5">Cèdre Sacré</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-1 mb-space-sm text-xs">Atlas Cedar, Pine Needles, Benjoin Resin</p>
+<div class="flex items-center justify-between pt-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-outline block uppercase">50ml / 100ml</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">€230</span>
+</div>
+<button aria-label="Add Cèdre Sacré to Cart" class="quick-add-btn bg-primary text-on-primary hover:bg-secondary transition-colors w-10 h-10 rounded-lg flex items-center justify-center shadow-xs active:scale-95">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Bespoke Concierge & Private Salon Appointment -->
+<section class="px-margin mb-space-xl">
+<div class="relative w-full rounded-xl overflow-hidden bg-primary-container text-surface p-space-lg shadow-lg">
+<div class="absolute -right-8 -bottom-8 w-44 h-44 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col">
+<div class="flex items-center justify-between mb-space-md">
+<span class="inline-flex items-center gap-1.5 py-1 px-2.5 rounded-full bg-surface/10 text-secondary-fixed text-label-sm font-label-sm uppercase tracking-wider backdrop-blur-sm">
+<span class="material-symbols-outlined text-[14px]">spa</span>
+            Salon Privé
+          </span>
+<span class="text-on-primary-container text-label-sm font-label-sm">Paris &amp; Online</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest font-light mb-space-xs">
+          Personal Fragrance Consultation
+        </h3>
+<p class="font-body-md text-body-md text-surface-variant font-light mb-space-lg leading-relaxed">
+          Embark on an intimate journey through our raw distillate library. Converse one-on-one with our resident Nose at the Rue Saint-Honoré atelier or via dedicated virtual salon streaming.
+        </p>
+<div class="grid grid-cols-2 gap-space-sm mb-space-lg">
+<div class="bg-surface/5 p-space-sm rounded-lg backdrop-blur-xs">
+<span class="font-label-sm text-label-sm uppercase text-secondary-fixed tracking-wider block mb-1">In-Person</span>
+<p class="font-body-md text-body-md text-surface-container-highest text-xs font-light">60 min sensory discovery in 1st Arrondissement</p>
+</div>
+<div class="bg-surface/5 p-space-sm rounded-lg backdrop-blur-xs">
+<span class="font-label-sm text-label-sm uppercase text-secondary-fixed tracking-wider block mb-1">Virtual Flacon</span>
+<p class="font-body-md text-body-md text-surface-container-highest text-xs font-light">Mailed sample discovery box &amp; digital sommelier</p>
+</div>
+</div>
+<button class="w-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md uppercase tracking-widest py-3.5 px-space-md rounded-lg flex items-center justify-center gap-space-xs hover:bg-secondary-fixed-dim transition-all shadow-md active:scale-[0.98]">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Reserve Consultation</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Interactive Sensory Pyramid Preview (Delightful Micro-Interaction) -->
+<section class="px-margin mb-space-xl">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="text-center max-w-xs mx-auto mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-1">The Scent Architecture</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Olfactory Evolution</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs mt-1">Tap a stage to reveal how rare essences evaporate over 12 hours.</p>
+</div>
+<!-- Interactive 3-tier Pyramid -->
+<div class="flex flex-col gap-space-xs" id="pyramid-container">
+<!-- Top Notes -->
+<button class="pyramid-step text-left w-full p-space-md rounded-lg bg-surface-container transition-all hover:bg-surface-container-high" data-stage="top">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center font-label-sm text-on-secondary-fixed font-bold">1</span>
+<div>
+<span class="font-title-md text-title-md text-on-surface block leading-tight">Head / Top Notes</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">0 - 30 minutes</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] transform transition-transform duration-300">expand_more</span>
+</div>
+<div class="pyramid-detail hidden mt-3 pt-3 text-on-surface-variant font-body-md text-xs leading-relaxed bg-surface-container-lowest p-2.5 rounded">
+            Luminous bursts of Calabrian Bergamot, Pink Peppercorn, and wild bitter orange blossom designed to awaken perception.
+          </div>
+</button>
+<!-- Heart Notes -->
+<button class="pyramid-step text-left w-full p-space-md rounded-lg bg-surface-container transition-all hover:bg-surface-container-high" data-stage="heart">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-secondary flex items-center justify-center font-label-sm text-on-secondary font-bold">2</span>
+<div>
+<span class="font-title-md text-title-md text-on-surface block leading-tight">Heart / Soul Notes</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">30 min - 4 hours</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] transform transition-transform duration-300">expand_more</span>
+</div>
+<div class="pyramid-detail hidden mt-3 pt-3 text-on-surface-variant font-body-md text-xs leading-relaxed bg-surface-container-lowest p-2.5 rounded">
+            The narrative core: Smoked Bourbon Vanilla, French Iris Pallida concrete, and Damascus Rose petals slow-extracted in Grasse.
+          </div>
+</button>
+<!-- Base Notes -->
+<button class="pyramid-step active text-left w-full p-space-md rounded-lg bg-surface-container-high transition-all" data-stage="base">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center font-label-sm text-on-primary font-bold">3</span>
+<div>
+<span class="font-title-md text-title-md text-on-surface block leading-tight">Foundation / Base Notes</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">4 - 24+ hours</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px] transform transition-transform duration-300 rotate-180">expand_more</span>
+</div>
+<div class="pyramid-detail mt-3 text-on-surface-variant font-body-md text-xs leading-relaxed bg-surface-container-lowest p-2.5 rounded">
+            Rich amber resinoid, Mysore sandalwood bark, golden benzoin, and botanical musk anchors creating persistent personal sillage.
+          </div>
+</button>
+</div>
+</div>
+</section>
+<!-- Master Perfumer Manifesto & Atelier Provenance -->
+<section class="px-margin mb-space-xl">
+<div class="relative bg-surface-container-low rounded-xl p-space-lg overflow-hidden shadow-xs">
+<div class="flex items-center gap-space-md mb-space-md">
+<img class="w-16 h-16 rounded-full object-cover shadow-sm ring-2 ring-secondary/20" data-alt="Editorial close portrait of a thoughtful French master perfumer smelling scent blotter strips in a sunlit Parisian laboratory filled with antique amber glass bottles, notebooks, and dried botanical specimens. Elegant monochrome with warm golden highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX4RNtHbi1AXnj_UWaZDUP0yGPpSPRd70JkcXVIShORfMiBegPD02kpjqcd4-PvuGA9Jqte23fTDaJMJqBQ79gUpLzy8zETEwZP1E4E365iS7YGhy7u7RbeFXZnQWbZpw1Z-xTLCRQ3QUfSLcaxW5Jn4_O7pPdtpYOXS8BnSWRfZYdHRDXanREImStkBIQJ9ZbPw6zFBAKw45r1lMNtko6Ve-h1gtNX3SVPq2NNzI"/>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block">The Nose · Le Nez</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Jean-Luc Beaulieu</h4>
+<span class="font-body-md text-body-md text-on-surface-variant text-xs">Master Parfumeur, Grasse</span>
+</div>
+</div>
+<div class="relative mb-space-md">
+<span class="material-symbols-outlined text-secondary/30 text-[48px] absolute -top-4 -left-3 pointer-events-none">format_quote</span>
+<blockquote class="font-headline-sm text-headline-sm italic text-on-surface font-light leading-snug pl-space-md">
+          “We do not manufacture scent. We harvest temporal poems. Each flacon preserves the exact humidity, soil minerality, and sunlight of Grasse at the dawn of the harvest.”
+        </blockquote>
+</div>
+<div class="bg-surface-container-lowest/80 p-space-sm rounded-lg flex items-center justify-between text-xs text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span>100% Hand-Poured Glass</span>
+</div>
+<span class="text-outline">·</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">eco</span>
+<span>Ethical Grasse Botanicals</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Scent Vault Newsletter / Atelier Dispatch -->
+<section class="px-margin mb-space-md">
+<div class="text-center p-space-lg rounded-xl bg-surface-container-highest">
+<span class="material-symbols-outlined text-secondary text-[28px] mb-space-xs">mark_email_unread</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">The Private Register</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs mb-space-md max-w-xs mx-auto">
+        Receive intimate dispatches regarding single-harvest barrel releases, bespoke reservations, and private salon evenings.
+      </p>
+<div class="flex items-center gap-space-xs max-w-sm mx-auto">
+<input class="flex-1 bg-surface-container-lowest text-on-surface font-body-md text-body-md px-space-md py-3 rounded-lg text-xs placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary" placeholder="your.email@domain.com" type="email"/>
+<button class="bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider px-space-md py-3 rounded-lg active:scale-95 transition-transform">
+          Join
+        </button>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Olfactory Chip Selector Interaction
+  document.querySelectorAll('.olfactory-chip').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('.olfactory-chip').forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        btn.classList.add('bg-surface-container-high', 'text-on-surface');
+      });
+      button.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+      button.classList.remove('bg-surface-container-high', 'text-on-surface');
+    });
+  });
+
+  // Olfactory Evolution Pyramid Interactive Toggle
+  document.querySelectorAll('.pyramid-step').forEach(step => {
+    step.addEventListener('click', () => {
+      const detail = step.querySelector('.pyramid-detail');
+      const arrow = step.querySelector('.material-symbols-outlined:last-child');
+      const isHidden = detail.classList.contains('hidden');
+
+      // Close all others
+      document.querySelectorAll('.pyramid-detail').forEach(d => d.classList.add('hidden'));
+      document.querySelectorAll('.pyramid-step').forEach(s => {
+        s.classList.remove('bg-surface-container-high');
+        s.classList.add('bg-surface-container');
+        const icon = s.querySelector('.material-symbols-outlined:last-child');
+        if (icon) icon.classList.remove('rotate-180', 'text-primary');
+      });
+
+      if (isHidden) {
+        detail.classList.remove('hidden');
+        step.classList.remove('bg-surface-container');
+        step.classList.add('bg-surface-container-high');
+        arrow.classList.add('rotate-180', 'text-primary');
+      }
+    });
+  });
+
+  // Quick Add Micro-feedback animation
+  document.querySelectorAll('.quick-add-btn').forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const icon = button.querySelector('.material-symbols-outlined');
+      const originalText = icon.textContent;
+      
+      icon.textContent = 'done';
+      button.classList.add('bg-secondary');
+      
+      setTimeout(() => {
+        icon.textContent = originalText;
+        button.classList.remove('bg-secondary');
+      }, 1200);
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_16px_rgba(26,26,26,0.03)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-gutter"><a aria-current="page" class="flex flex-col items-center justify-center w-14 h-12 transition-colors group text-primary font-semibold" data-path="discovery" href="../discovery_maison_parfumerie/"><span class="material-symbols-outlined text-[22px] mb-0.5 group-hover:scale-105 transition-transform">auto_awesome</span><span class="font-label-sm text-label-sm uppercase tracking-widest">Home</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors hover:text-on-surface group" data-path="fragrance-finder" href="../fragrance_finder_olfactory_quiz/"><span class="material-symbols-outlined text-[22px] mb-0.5 group-hover:scale-105 transition-transform">grain</span><span class="font-label-sm text-label-sm uppercase tracking-widest">Finder</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors hover:text-on-surface group" data-path="saved-extracts" href="#"><span class="material-symbols-outlined text-[22px] mb-0.5 group-hover:scale-105 transition-transform">bookmark_border</span><span class="font-label-sm text-label-sm uppercase tracking-widest">Saved</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant transition-colors hover:text-on-surface group relative" data-path="cart-bag" href="../shopping_bag_atelier_selection/"><div class="relative flex items-center justify-center mb-0.5"><span class="material-symbols-outlined text-[22px] group-hover:scale-105 transition-transform">shopping_bag</span><span class="absolute -top-1 -right-2 bg-secondary text-surface text-[9px] leading-tight font-bold rounded-full h-3.5 w-3.5 flex items-center justify-center font-label-sm shadow-[0_2px_4px_rgba(114,91,56,0.25)]">2</span></div><span class="font-label-sm text-label-sm uppercase tracking-widest">Bag</span></a></div></nav></body></html>

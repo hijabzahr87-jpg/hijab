@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haute Parfumerie · Luxury Fragrance E-Commerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Manrope:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              surface: '#fcf9f4',
+              secondary: '#725b38',
+              accent: '#fedeb2',
+              dark: '#1c1c19',
+              gold: '#b68d40'
+            }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Manrope', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #121212;
+      color: #e5e2dd;
+      font-family: 'Manrope', sans-serif;
+      overflow-x: hidden;
+    }
+    .device-frame {
+      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.7), 0 0 0 12px #262626, 0 0 0 14px #404040;
+      border-radius: 46px;
+      overflow: hidden;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .device-notch {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 28px;
+      background: #000;
+      border-radius: 20px;
+      z-index: 50;
+      pointer-events: none;
+    }
+    .nav-btn.active {
+      background-color: #725b38;
+      color: #ffffff;
+      border-color: #725b38;
+      box-shadow: 0 4px 12px rgba(114, 91, 56, 0.35);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+  <!-- Top Navigation & Control Bar -->
+  <header class="bg-[#1a1a1a]/95 backdrop-blur-md border-b border-neutral-800 sticky top-0 z-50 px-4 py-3">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <!-- Brand Title -->
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-full bg-brand-secondary flex items-center justify-center text-white font-serif font-bold text-sm shadow-md">
+          M
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-serif tracking-widest text-sm uppercase text-neutral-200">Maison Parfumerie</span>
+            <span class="bg-brand-secondary/20 text-brand-accent text-[10px] tracking-wider uppercase px-2 py-0.5 rounded-full border border-brand-secondary/40 font-semibold">Live Preview</span>
+          </div>
+          <p class="text-xs text-neutral-400">Luxury Scent Atelier · Grasse, France</p>
+        </div>
+      </div>
+
+      <!-- Flow Selector Tabs -->
+      <div class="flex items-center gap-1.5 bg-neutral-900/90 p-1 rounded-xl border border-neutral-800 overflow-x-auto text-xs">
+        <button onclick="setScreen('discovery_maison_parfumerie/', this)" class="nav-btn active px-3.5 py-1.5 rounded-lg text-neutral-300 hover:text-white transition-all flex items-center gap-1.5 font-medium whitespace-nowrap">
+          <span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+          <span>Discovery (Home)</span>
+        </button>
+        <button onclick="setScreen('fragrance_finder_olfactory_quiz/', this)" class="nav-btn px-3.5 py-1.5 rounded-lg text-neutral-300 hover:text-white transition-all flex items-center gap-1.5 font-medium whitespace-nowrap">
+          <span class="material-symbols-outlined text-[16px]">psychology_alt</span>
+          <span>Olfactory Quiz</span>
+        </button>
+        <button onclick="setScreen('flacon_details_nuit_de_santal/', this)" class="nav-btn px-3.5 py-1.5 rounded-lg text-neutral-300 hover:text-white transition-all flex items-center gap-1.5 font-medium whitespace-nowrap">
+          <span class="material-symbols-outlined text-[16px]">diamond</span>
+          <span>Flacon Details</span>
+        </button>
+        <button onclick="setScreen('shopping_bag_atelier_selection/', this)" class="nav-btn px-3.5 py-1.5 rounded-lg text-neutral-300 hover:text-white transition-all flex items-center gap-1.5 font-medium whitespace-nowrap">
+          <span class="material-symbols-outlined text-[16px]">shopping_bag</span>
+          <span>Atelier Bag (2)</span>
+        </button>
+      </div>
+
+      <!-- Controls: View Mode & Direct Link -->
+      <div class="flex items-center gap-2">
+        <div class="flex items-center bg-neutral-900 p-0.5 rounded-lg border border-neutral-800 text-xs">
+          <button id="mode-mobile" onclick="setViewMode('mobile')" title="Mobile View" class="px-2.5 py-1.5 rounded bg-neutral-800 text-white flex items-center gap-1 transition-colors">
+            <span class="material-symbols-outlined text-[16px]">smartphone</span>
+            <span class="hidden sm:inline">Mobile</span>
+          </button>
+          <button id="mode-full" onclick="setViewMode('full')" title="Full View" class="px-2.5 py-1.5 rounded text-neutral-400 hover:text-white flex items-center gap-1 transition-colors">
+            <span class="material-symbols-outlined text-[16px]">desktop_windows</span>
+            <span class="hidden sm:inline">Expanded</span>
+          </button>
+        </div>
+
+        <a id="external-link" href="discovery_maison_parfumerie/" target="_blank" class="px-3 py-1.5 rounded-lg bg-neutral-800 hover:bg-neutral-700 text-neutral-200 text-xs flex items-center gap-1 transition-colors" title="Open active screen in new tab">
+          <span>Open Tab</span>
+          <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Interactive Container -->
+  <main class="flex-1 flex flex-col items-center justify-center p-4 sm:p-8 bg-gradient-to-b from-[#161616] via-[#121212] to-[#0d0d0d]">
+    <div id="wrapper" class="relative transition-all duration-300 w-full max-w-[420px] h-[860px]">
+      <!-- iPhone Notch Dynamic Island (shown in mobile mode) -->
+      <div id="notch" class="device-notch"></div>
+      
+      <!-- Frame & Iframe -->
+      <div id="device-container" class="device-frame w-full h-full relative bg-brand-surface">
+        <iframe 
+          id="app-frame" 
+          src="discovery_maison_parfumerie/" 
+          class="w-full h-full border-0 bg-brand-surface"
+          title="Maison Parfumerie Application">
+        </iframe>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Info Bar -->
+  <footer class="bg-[#151515] border-t border-neutral-800/80 py-2.5 px-4 text-center text-xs text-neutral-500">
+    <span>Maison Haute Parfumerie E-Commerce · Built with Material 3 & Tailwind CSS · Localhost Active</span>
+  </footer>
+
+  <script>
+    let currentPath = 'discovery_maison_parfumerie/';
+    let currentMode = 'mobile';
+
+    function setScreen(path, btn) {
+      currentPath = path;
+      const iframe = document.getElementById('app-frame');
+      iframe.src = path;
+
+      document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+
+      document.getElementById('external-link').href = path;
+    }
+
+    function setViewMode(mode) {
+      currentMode = mode;
+      const wrapper = document.getElementById('wrapper');
+      const container = document.getElementById('device-container');
+      const notch = document.getElementById('notch');
+      const btnMobile = document.getElementById('mode-mobile');
+      const btnFull = document.getElementById('mode-full');
+
+      if (mode === 'full') {
+        wrapper.className = 'w-full max-w-6xl h-[90vh] transition-all duration-300';
+        container.className = 'w-full h-full rounded-2xl overflow-hidden border border-neutral-700 shadow-2xl relative bg-brand-surface';
+        notch.style.display = 'none';
+
+        btnFull.className = 'px-2.5 py-1.5 rounded bg-neutral-800 text-white flex items-center gap-1 transition-colors';
+        btnMobile.className = 'px-2.5 py-1.5 rounded text-neutral-400 hover:text-white flex items-center gap-1 transition-colors';
+      } else {
+        wrapper.className = 'relative transition-all duration-300 w-full max-w-[420px] h-[860px]';
+        container.className = 'device-frame w-full h-full relative bg-brand-surface';
+        notch.style.display = 'block';
+
+        btnMobile.className = 'px-2.5 py-1.5 rounded bg-neutral-800 text-white flex items-center gap-1 transition-colors';
+        btnFull.className = 'px-2.5 py-1.5 rounded text-neutral-400 hover:text-white flex items-center gap-1 transition-colors';
+      }
+    }
+
+    // Keep external link updated if iframe navigates internally
+    const iframe = document.getElementById('app-frame');
+    iframe.addEventListener('load', () => {
+      try {
+        const url = iframe.contentWindow.location.pathname;
+        if (url) {
+          document.getElementById('external-link').href = iframe.contentWindow.location.href;
+          // Sync active tab
+          document.querySelectorAll('.nav-btn').forEach(btn => {
+            const attr = btn.getAttribute('onclick');
+            if (attr && url.includes(attr.split("'")[1].replace('/', ''))) {
+              document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+              btn.classList.add('active');
+            }
+          });
+        }
+      } catch (e) {
+        // cross-origin safety
+      }
+    });
+  </script>
+</body>
+</html>
